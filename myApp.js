@@ -2,15 +2,15 @@ var express = require('express');
 var app = express();
 
 
-console.log("hello heroku");
 
 app.use(function(req, res, next) {
   console.log(req.method + " " + req.path + " - " + req.ip);
+  console.log("Hello World!");
   next();
 })
 
 
-console.log("Hello World!");
+
 let absolutePath = __dirname + "/views/index.html";
 
 
