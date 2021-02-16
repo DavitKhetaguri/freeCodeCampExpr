@@ -5,7 +5,7 @@ var app = express();
 
 app.use(function(req, res, next) {
   console.log(req.method + " " + req.path + " - " + req.ip);
-  console.log("Hello World!");
+  console.log("Hello World!",process.env.MESSAGE_STYLE);
   next();
 })
 
