@@ -1,15 +1,8 @@
-
-
-
-
-
-
-
-
-
 var express = require('express');
 var app = express();
 
+
+console.log("hello heroku");
 
 app.use(function(req, res, next) {
   console.log(req.method + " " + req.path + " - " + req.ip);
